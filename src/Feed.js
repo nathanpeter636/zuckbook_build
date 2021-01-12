@@ -24,7 +24,7 @@ function Feed() {
             timestamp='this is a timestamp'
 
 
-            message='euuusch fefddff fdf'
+            message='Welcome to ZUCK World'
             
             
             

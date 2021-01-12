@@ -4,6 +4,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Feed from './Feed'
 
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
 
     <Sidebar/>
     <Feed/>
+
 
 
      </div>
