@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import FlagOutlinedIcon from "@material-ui/icons/FlagOutlined";
@@ -14,6 +14,9 @@ import ForumIcon from '@material-ui/icons/Forum';
 
 import "./Header.css";
 
+
+
+
 function Header() {
   return (
     <div className="header">
@@ -24,7 +27,7 @@ function Header() {
         />
 
         <div className="header__input">
-          <SearchIcon />
+          <SearchIcon  />
           <input type="text" placeholder="Search Facebook"></input>
         </div>
       </div>

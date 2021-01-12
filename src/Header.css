@@ -9,13 +9,19 @@
     background-color: white;
     z-index: 100;
     top: 0;
-    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75)
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+
 }
+
+
+
 
 .header__left {
     display: flex;
     justify-content: space-evenly;
 }
+
+
 
 .header__left > img {
 
@@ -33,6 +39,12 @@
     border-radius: 999px;
 }
 
+
+.header__inputFull {
+    width: 75vw;
+}
+
+
 .header__input > input {
     border: none;
     background-color: transparent;
@@ -44,6 +56,14 @@
     display: flex;
     flex: 1;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .header__center {
+        display: none;
+    }
+
 }
 
 .header__option > .MuiSvgIcon-root {
@@ -70,10 +90,7 @@
     align-items: center;
 
     padding: 0px 30px;
-   
-
-    
-    
+ 
 }
 
 .header__option:hover {
@@ -90,6 +107,8 @@
 
 }
 
+
+
 .header__info > h4 {
     margin-left: 10px;
 }
@@ -97,3 +116,26 @@
 .header__right {
     display: flex;
 }
+
+
+@media (max-width: 768px) {
+
+    .header {
+       z-index: 99;
+    }
+
+
+    .header__input > input::placeholder {
+        color: transparent;
+       
+    }
+
+    .header__input {
+        width: 25px;
+    }
+
+    .header__info{
+        display: none;
+    }
+}
+

@@ -2,6 +2,7 @@
 
 body {
   background-color: #f1f2f5;
+  width: 100vw;
 }
 
 .app {
@@ -10,11 +11,20 @@ body {
 }
 
 
+
 .app__body {
 
   /* background-color: #f1f2f5; */
   
   display: flex;
-  height: 100vh;
+ 
 
+}
+
+@media (max-width: 768px) {
+  body  {
+      width: 100vw;
+      
+  }
+      
 }

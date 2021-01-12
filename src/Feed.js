@@ -11,13 +11,29 @@ function Feed() {
     return (
         <div className="feed">
             <StoryReel/>
+
+            <div className="feedInner__container">
             <MessageSender/>
 
-            <Post/>
+            <Post profilePic='https://www.thenation.com/wp-content/uploads/2020/09/zuckerberg-testify-ap-img.jpg'
+            
+            image='https://www.thenation.com/wp-content/uploads/2020/09/zuckerberg-testify-ap-img.jpg'
+
+            username='Mark ZUCK'
+
+            timestamp='this is a timestamp'
+
+
+            message='euuusch fefddff fdf'
+            
+            
+            
+            
+            />
             <Post/>
             <Post/>
 
-            
+            </div>
         </div>
     )
 }

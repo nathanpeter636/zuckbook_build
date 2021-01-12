@@ -42,7 +42,7 @@ function MessageSender() {
             
             <form action="">
             <input value={input} onChange={(e) => setInput(e.target.value)} className="messageSender__input" type="text" placeholder="Who should we ban today?"/>
-            <input value={image} onChange={(e) => setImageUrl(e.target.value)}placeholder="image URL"/>
+            <input className="img__input" value={image} onChange={(e) => setImageUrl(e.target.value)}placeholder="image URL"/>
 
 
             <button onClick={handleSubmit}>  Hidden Submit </button>

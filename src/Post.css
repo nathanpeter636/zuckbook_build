@@ -1,0 +1,38 @@
+.post {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.post__top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.post__avatar {
+  margin-right: 10px;
+}
+
+.post__topInfo > h3 {
+  font-size: medium;
+}
+
+.post__topInfo > p {
+  color: gray;
+}
+
+.post__image > img {
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .post {
+    width: 100vw;
+    border-radius: 0px;
+  }
+}

@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Story from "./Story";
 
 import "./StoryReel.css";
 
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
+import IconButton from '@material-ui/core/IconButton';
+import { findAllByDisplayValue } from "@testing-library/react";
+
 function StoryReel() {
+
+
+
+
   return (
+
+    <>
+    
+    <div className="story__arrowContainer">
+    <IconButton>
+    <ArrowBackIcon  className="story__arrow" />
+          </IconButton>
+
+          <IconButton>
+    <ArrowForwardIcon  className="story__arrowTwo" />
+          </IconButton>       
+
+    </div>
+
     <div className="storyReel">
+
+  
+      
       <Story
         image="https://www.newstatesman.com/sites/default/files/styles/cropped_article_image/public/blogs_2018/04/gettyimages-944363520.jpg?itok=G0GrSHJa"
         profileSrc="https://www.thenation.com/wp-content/uploads/2020/09/zuckerberg-testify-ap-img.jpg"
@@ -31,7 +59,9 @@ function StoryReel() {
         profileSrc="https://economictimes.indiatimes.com/thumb/msid-77256555,width-1200,height-900,resizemode-4,imgsize-604785/jeff-bezos.jpg?from=mdr"
         title="Jeff Bezos"
       />
+      
     </div>
+    </>
   );
 }
 

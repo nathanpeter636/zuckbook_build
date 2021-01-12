@@ -6,3 +6,16 @@
 justify-content: center;
 align-items: center;
 }
+
+@media (max-width: 768px) {
+    .feed {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    flex-direction: column;
+    width: 100vw;
+   }
+}
+
+

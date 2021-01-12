@@ -9,6 +9,9 @@
    width: 100%;
 }
 
+
+
+
 .messageSender__top {
    
 
@@ -72,4 +75,21 @@
 
     cursor: pointer;
     border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .messageSender {
+        border-radius: 0px;
+    width: 100vw;
+    }
+
+    .messageSender__options:nth-child(3) {
+        display: none;
+    }
+
+    .img__input {
+        display: none;
+    }
+        
 }

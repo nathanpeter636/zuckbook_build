@@ -1,4 +1,48 @@
 .storyReel {
     display: flex;
+    position: relative;
+   
+}
+
+
+
+
+.story__arrow {
     
+    background-color: white;
+    
+  
+    cursor: pointer;
+    border-radius: 999px;
+    z-index: 100;
+    
+}
+
+.story__arrowTwo {
+   
+    background-color: white;
+   
+    
+    cursor: pointer;
+    border-radius: 999px;
+    z-index: 10;
+   
+
+}
+
+.story__arrowContainer {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: darkturquoise;
+    position: absolute;
+    top: 25%;
+   opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .story__arrowContainer {
+        opacity: 1;
+    }
 }
