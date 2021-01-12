@@ -10,11 +10,19 @@ import googleLogo from "./google-logo.png"
 import Avatar from "@material-ui/core/Avatar";
 
 import "./Login.css"
-import { TramRounded } from '@material-ui/icons';
 
-function Login({user}) {
+import {auth, provider} from "./firebase";
 
 
+
+function Login() {
+
+const signIn = () => {
+
+    auth.signInWithPopup(provider).then(result => {
+        console.log(result).catch(error => alert(error.message))
+    })
+}
     
 
 
@@ -38,7 +46,7 @@ function Login({user}) {
         <Avatar className="loginPage__avatar" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxJnEqfkjuGiohBOOJGhL1p_BeF08KN5gew&usqp=CAU"}/>
 
 
-            <button>
+            <button onClick={signIn}>
                 <img src={googleLogo} alt=""/>
 
                 <h4>Login with Google</h4>
