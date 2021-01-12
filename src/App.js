@@ -5,7 +5,7 @@ import Feed from "./Feed";
 import Login from "./Login";
 
 function App() {
-  const user = true;
+  const user = null;
 
   return (
     <div className="app">

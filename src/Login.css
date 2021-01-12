@@ -1,0 +1,111 @@
+.login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.login > .login__logo {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login > div > img {
+  object-fit: contain;
+  height: 130px;
+  /* padding-top: 50px; */
+}
+
+.login > div {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.login > .button__container > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1977f3;
+
+  border-radius: 10px;
+
+  border: none;
+
+  height: 50px;
+  width: 200px;
+
+
+  cursor: pointer;
+  padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+button > h4 {
+  color: white;
+  font-size: medium;
+}
+
+button:focus {outline:0;}
+
+.login > .button__container > button > img {
+  object-fit: contain;
+  height: 30px;
+}
+
+
+.button__container {
+    
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* display: flex; */
+    /* justify-content: center; */
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    align-items: center;
+    box-shadow: 0px 5px 17px -7px rgb(0 0 0);
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.button__container > .MuiAvatar-root {
+   width: 140px;
+   height: 140px;
+   position: absolute;
+   top: 20px;
+}
+
+
+@media (max-width: 1100px ) {
+    .button__container {
+        box-shadow: unset;
+        width: unset;
+        height: unset;
+        background-color: unset;
+        
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .login__logo {
+        flex-direction: column!important;
+    }
+    .login__font {
+        height: 100px!important;
+    }
+
+    .loginPage__avatar {
+        display: none!important;
+    }
+}
