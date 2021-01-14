@@ -14,12 +14,18 @@ import FolderIcon from '@material-ui/icons/Folder';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 // import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 
+import {useStateValue} from "./StateProvider"
+// const [{ user }, dispatch] = useStateValue();
+
 export default function Sidebar() {
+
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="sidebar">
       <SidebarRow
-        src="https://www.thenation.com/wp-content/uploads/2020/09/zuckerberg-testify-ap-img.jpg"
-        title="Mark ZUCK"
+        src={user.photoURL}
+        title={user.displayName}
       />
 
       <SidebarRow Icon={PanToolIcon} title="Censorship" />

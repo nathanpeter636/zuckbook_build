@@ -10,7 +10,12 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
+import {useStateValue} from "./StateProvider"
+// const [{ user }, dispatch] = useStateValue();
+
 function MessageSender() {
+
+    const [{ user }, dispatch] = useStateValue();
 
     const [input, setInput] = useState('');
 
@@ -37,11 +42,11 @@ function MessageSender() {
         <div className="messageSender">
             <div className="messageSender__top">
 
-            <Avatar/>
+            <Avatar src={user.photoUrl}/>
             
             
             <form action="">
-            <input value={input} onChange={(e) => setInput(e.target.value)} className="messageSender__input" type="text" placeholder="Who should we ban today?"/>
+            <input value={input} onChange={(e) => setInput(e.target.value)} className="messageSender__input" type="text" placeholder={`Who should we ban today, ${user.displayName} ?`}/>
             <input className="img__input" value={image} onChange={(e) => setImageUrl(e.target.value)}placeholder="image URL"/>
 
 
