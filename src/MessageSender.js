@@ -11,7 +11,14 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 import {useStateValue} from "./StateProvider"
-// const [{ user }, dispatch] = useStateValue();
+
+import firebase from "firebase"
+
+import db from "./firebase"
+
+// import * as firebase from 'firebase';
+
+
 
 function MessageSender() {
 
@@ -22,15 +29,30 @@ function MessageSender() {
 
     const [image, setImageUrl] = useState('');
 
+    // var docRef = db.collection('posts')
+
+    // var updateTimestamp = docRef.update({
+    //     timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    // });
+
+  
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
     
 
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
+        db.collection('posts').add({
+          message: input,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+          profilePic: user.photoURL,
+          username: user.displayName,
+          image: image,
+          likes: 0,
+        })
+    
         setInput('');
         setImageUrl('');
-    }
+      };
 
    
 

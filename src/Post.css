@@ -59,6 +59,14 @@
         border-radius: 10px;
 }
 
+.post__option > p {
+  margin-left: 10px;
+}
+
+.post__option > span {
+  margin-right: 10px;
+}
+
 @media (max-width: 768px) {
   .post {
     width: 100vw;
