@@ -35,7 +35,7 @@ function Header() {
 
         <div className="header__input">
           <SearchIcon  />
-          <input type="text" placeholder="Search Facebook"></input>
+          <input type="text" placeholder="Search Zuckbook"></input>
         </div>
       </div>
       <div className="header__center">

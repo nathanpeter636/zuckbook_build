@@ -10,6 +10,7 @@ import { useStateValue } from "./StateProvider";
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
+  // const user = true;
   return (
     <div className="app">
       {!user ? (

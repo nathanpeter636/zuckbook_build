@@ -20,7 +20,7 @@ import db from "./firebase"
 
 
 
-function MessageSender() {
+function MessageSender( profilePic) {
 
     const [{ user }, dispatch] = useStateValue();
 
@@ -64,7 +64,7 @@ function MessageSender() {
         <div className="messageSender">
             <div className="messageSender__top">
 
-            <Avatar src={user.photoUrl}/>
+            <Avatar src={user.photoURL}/>
             
             
             <form action="">

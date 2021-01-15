@@ -16,6 +16,8 @@ import { actionTypes } from "./reducer";
 
 import { useStateValue } from "./StateProvider";
 
+// import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+
 
 function Login() {
   const [state, dispatch] = useStateValue();
@@ -34,6 +36,13 @@ function Login() {
     }).catch((error) => alert(error.message))
     
   };
+
+  const demoLogin = () => {
+
+
+  }
+
+
 
   return (
     <div className="login">
@@ -62,9 +71,11 @@ function Login() {
           <h4>Login with Google</h4>
         </button>
 
-        <button style={{ bottom: "45px" }}>
+
+        <button onClick={demoLogin} style={{ bottom: "45px" }}>
           <h4>Demo Login</h4>
         </button>
+        
       </div>
     </div>
   );
